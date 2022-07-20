@@ -65,19 +65,21 @@ export default defineConfig({
             { text: '配置', link: '/guide/essentials/config' },
             { text: '路由', link: '/guide/essentials/routing' },
             { text: '视图', link: '/guide/essentials/views' },
-            { text: 'Store(Pinia)', link: '/guide/essentials/store' },
+            { text: '状态管理(Pinia)', link: '/guide/essentials/store-pinia' },
             { text: 'asyncData 方法', link: '/guide/essentials/async-data' },
+            { text: 'seo 方法', link: '/guide/essentials/seo' },
             { text: '资源文件', link: '/guide/essentials/assets' },
-            { text: '构建与发布', link: '/guide/essentials/build-and-release' },
+            { text: '构建与部署', link: '/guide/essentials/build-and-deploy' },
           ]
         },
         {
           text: '进阶',
           collapsible: true,
           items: [
-            { text: 'tsconfig 配置', link: '/guide/senior/tsconfig' },
-            { text: 'Volar', link: '/guide/senior/volar' },
             { text: '错误处理', link: '/guide/senior/error' },
+            { text: 'Vite 服务', link: '/guide/senior/vite' },
+            { text: 'tsconfig 配置', link: '/guide/senior/tsconfig' },
+            { text: 'VS Code 插件', link: '/guide/senior/v-s-code' },
           ]
         },
         

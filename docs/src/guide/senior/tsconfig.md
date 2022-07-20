@@ -1,1 +1,4 @@
-# tsconfig 配置
+# tsconfig 配置 {#index}
+
+完善中...
+
