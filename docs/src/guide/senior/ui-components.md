@@ -75,7 +75,7 @@ pnpm add -D unplugin-vue-components unplugin-auto-import
 
 ## Tdesign Vue Next {#tdesign-vue-next}
 
-鹅厂优质 UI 组件，配套工具完满，设计工整，文档清晰。
+鹅厂优质 UI 组件，配套工具完整，设计工整，文档清晰。
 
 ### 安装 {#tdesign-vue-next-install}
 
