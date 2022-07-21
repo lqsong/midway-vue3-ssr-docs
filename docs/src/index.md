@@ -6,7 +6,7 @@ hero:
   text: 基于 Midway、Vue 3 组装的 SSR 框架
   tagline: 简单、易学易用、方便扩展、集成Midway框架，您一直想要的Vue SSR 框架。
   image:
-    src: /logo.png
+    src: /images/logo.png
     alt: Midway-Vue3-SSR
   actions:
     - theme: brand

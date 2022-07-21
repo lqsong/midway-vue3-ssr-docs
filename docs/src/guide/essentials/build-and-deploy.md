@@ -59,7 +59,7 @@ NODE_ENV=production pm2 start ./bootstrap.js --name midway_vue3_ssr -i 4
 
 效果如下：
 
-![deploy](/deploy.png)
+![deploy](/images/deploy.png)
 
 
 
