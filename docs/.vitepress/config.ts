@@ -89,7 +89,7 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/lqsong/midway-vue3-ssr' },
     ],
-    logo: '/logo.png',
+    logo: '/images/logo.png',
     footer: {
       message: 'Released under the MIT License.',
       copyright: `Copyright © 2022-${new Date().getFullYear()} LiQingSong`
