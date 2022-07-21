@@ -91,6 +91,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/lqsong/midway-vue3-ssr' },
     ],
     logo: '/images/logo.png',
+    outlineTitle: '页面概要',
     footer: {
       message: 'Released under the MIT License.',
       copyright: `Copyright © 2022-${new Date().getFullYear()} LiQingSong`
