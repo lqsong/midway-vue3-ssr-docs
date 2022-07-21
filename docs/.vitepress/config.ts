@@ -9,7 +9,7 @@ export default defineConfig({
   description: '基于 Midway、Vue 3 组装的 SSR 框架，简单、易学易用、方便扩展、集成Midway框架，您一直想要的Vue SSR 框架。',
   head: [
     ['link', {rel: 'icon', href: '/favicon.ico'}],
-    ['script', {type: 'text/javascript', src: 'https://hm.baidu.com/hm.js?d8eab33f10db62e2cbe1b8ba38036836'}]
+    ['script', {type: 'text/javascript', src: 'https://hm.baidu.com/hm.js?0912c56637b69465245b46143a6ea33b'}]
   ],
   markdown: {
     theme: 'material-palenight',
