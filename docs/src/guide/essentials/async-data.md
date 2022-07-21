@@ -26,7 +26,7 @@ declare module 'vue' {
 
 ### async {#use-async}
 
-```vue
+```vue{5-8}
 <script lang="ts">
 import { defineComponent} from 'vue'
 import { useAboutStore, IAboutState } from "./store";
@@ -41,7 +41,7 @@ export default defineComponent({
 
 ### 数据展示 {#use-data}
 
-```vue
+```vue{5,12-20}
 <script lang="ts" setup>
 import { useAboutStore, IAboutState } from "./store";
 // 读取数据
@@ -70,7 +70,7 @@ const tableData = computed<IAboutState>(()=>aboutStore.$state);
 
 ### 监听 query 参数改变 {#use-query}
 
-默认情况下，query 的改变不会调用 `asyncData` 方法。如果要监听这个行为，例如，在构建分页组件时，您可以设置 `watch` 监听参数。如下样列：
+默认情况下，query 的改变不会调用 `asyncData` 方法。如果需要，可以监听这个行为。例如，在构建分页组件时，您可以设置 `watch` 监听参数。如下样列：
 
 ```vue{18-26}
 <script lang="ts">

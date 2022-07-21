@@ -2,9 +2,9 @@
 
 配置是开发一个项目的重要环节，它是一个项目的基础。想要了解一个项目，先要了解它的配置。
 
-## web 站点配置 {#web-site-config}
+## web前端站点配置 {#web-site-config}
 
-`midway-vue3-ssr` 内置了一个web站点配置文件 `/web/config/settings.ts`。
+`midway-vue3-ssr` 内置了一个web前端站点配置文件 `/web/config/settings.ts`。
 
 ```ts
 /**
@@ -47,7 +47,7 @@ export default settings;
 
 ```
 
-## web 路由入口配置 {#web-route-config}
+## web前端路由入口配置 {#web-route-config}
 
 `midway-vue3-ssr` 独立出了一个前端路由入口配置文件 `/web/config/routes.ts`，其目的主要是：统一引入`/web/layouts`下不同`layout`的路由，集中处理重新格式化路由。
 
@@ -113,7 +113,7 @@ export const createRouter = (type: RouterType): Router => {
 [官方文档](https://cn.vitejs.dev/config/)
 
 
-## web 环境变量 {#web-env-config}
+## web前端环境变量 {#web-env-config}
 `midway-vue3-ssr` web前端是基于 `vite` 来进行构建，所以有环境变量配置文件 `/web/.env.development`、`/web/.env.production`。
 
 [官方文档](https://cn.vitejs.dev/guide/env-and-mode.html)

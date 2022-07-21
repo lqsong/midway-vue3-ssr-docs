@@ -6,7 +6,7 @@ export default defineConfig({
   srcDir: 'src',
   title: 'Midway-Vue3-SSR',
   titleTemplate: '基于 Midway、Vue 3 组装的 SSR 框架',
-  description: '基于 Midway、Vue 3 组装的 SSR 框架，简单、易学易用、方便扩展且结合Midway框架，您一直想要的Vue SSR 框架。',
+  description: '基于 Midway、Vue 3 组装的 SSR 框架，简单、易学易用、方便扩展、集成Midway框架，您一直想要的Vue SSR 框架。',
   head: [
     ['link', {rel: 'icon', href: '/favicon.ico'}],
   ],
@@ -76,7 +76,8 @@ export default defineConfig({
           text: '进阶',
           collapsible: true,
           items: [
-            { text: '错误处理', link: '/guide/senior/error' },
+            { text: 'UI 组件', link: '/guide/senior/ui-components' },
+            { text: '异常处理', link: '/guide/senior/exception-handling' },
             { text: 'Vite 服务', link: '/guide/senior/vite' },
             { text: 'tsconfig 配置', link: '/guide/senior/tsconfig' },
             { text: 'VS Code 插件', link: '/guide/senior/v-s-code' },

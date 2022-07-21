@@ -188,7 +188,7 @@ export const createRouter = (type: RouterType): Router => {
 
 页面组件实际上是 Vue 组件，只不过 `midway-vue3-ssr` 为这些组件添加了一些特殊的配置项（对应 `midway-vue3-ssr` 提供的功能特性）以便你能快速开发通用应用。
 
-```vue
+```vue{6-15}
 <script lang="ts">
 import { defineComponent, computed } from 'vue'
 import { useDetailStore } from "./store";

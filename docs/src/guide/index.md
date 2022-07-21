@@ -20,7 +20,7 @@ Vue (发音为 /vjuː/，类似 **view**) 是一款用于构建用户界面的 J
 
 ## 易学易用 {#easy-learn-use}
 
-基于 Vue 3、Midway 和 TypeScript 等组装，不需要再学习，开箱即用。
+基于 Vue 3、Midway 和 TypeScript 等组装；如果你已经熟悉Vue 3、Midway，不需要再学习，开箱即用。
 
 ## 方便扩展 {#easy-expand}
 
@@ -32,7 +32,7 @@ Vue (发音为 /vjuː/，类似 **view**) 是一款用于构建用户界面的 J
 
 ## 前序准备 {#preliminary-preparation}
 
-在开始之前，如果你没有学习这些： [Midway](https://github.com/midwayjs/midway)、[Vue3.x](https://github.com/vuejs/vue-next) 、 [Vue-router](https://github.com/vuejs/router)、[Pinia](https://github.com/vuejs/pinia)、[Element Plus](https://github.com/element-plus/element-plus)、 [ES2015+](http://es6.ruanyifeng.com/) 、 [TypeScript](https://github.com/Microsoft/TypeScript) 、 [Element Plus](https://github.com/element-plus/element-plus) 请先学习，并且了解 [Vite](https://github.com/vitejs/vite)、[Webpack](https://github.com/webpack/webpack) 、 [Axios](https://github.com/axios/axios) ，因为本项目技术栈都是基于它们。
+在开始之前，如果你没有学习这些： [Midway](https://github.com/midwayjs/midway)、[Vue3.x](https://github.com/vuejs/vue-next) 、 [Vue-router](https://github.com/vuejs/router)、[Pinia](https://github.com/vuejs/pinia)、[Element Plus](https://github.com/element-plus/element-plus)、 [Axios](https://github.com/axios/axios)、 [ES2015+](http://es6.ruanyifeng.com/) 、 [TypeScript](https://github.com/Microsoft/TypeScript)  请先学习，并且了解 [Vite](https://github.com/vitejs/vite)、[Webpack](https://github.com/webpack/webpack)  ，因为本项目技术栈都是基于它们。
 
 你需要在本地安装 [node >=12.0.0](http://nodejs.org/) 和 [git](https://git-scm.com/)。
 

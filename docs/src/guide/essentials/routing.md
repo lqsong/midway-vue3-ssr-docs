@@ -39,7 +39,7 @@ declare module 'vue-router' {
 
 **示例：**
 
-```ts
+```ts{7-10}
 import { RouteRecordRaw } from 'vue-router';
 const DefaultLayoutRoutes: Array<RouteRecordRaw> = [
     {
@@ -58,6 +58,36 @@ const DefaultLayoutRoutes: Array<RouteRecordRaw> = [
 
 export default DefaultLayoutRoutes;
 ```
+
+
+:::info Seo 说明
+
+`title`: seo标题，html的title标签内容
+
+`keywords`: seo关键字，html的meta标签name="keywords"的内容
+
+`description`: seo说明，html的meta标签name="description"的内容
+
+高级用法请查看 [seo 方法](/guide/essentials/seo.md)。
+:::
+
+:::info 
+
+
+`navActive`：用于设置选中的导航栏，需要在`.vue`模板中配合代码判断；此参数存在的原因，一般是因为详情页需要选中对应的导航，或其他特殊情况。
+
+```vue{3-5}
+<template>
+    <nav>
+      <router-link to="/" :class="{'active': meta.navActive === 'home'}">Home</router-link> |
+      <router-link to="/about" :class="{'active': meta.navActive === 'about'}">About</router-link> |
+      <router-link :to="{path:'/localapi', query: {'uid':10}}" :class="{'active': meta.navActive === 'localapi'}">LocalApi</router-link>
+    </nav>
+    <router-view></router-view>
+</template>
+```
+
+:::
 
 ## Vue路由 {#vue-route}
 

@@ -4,7 +4,7 @@ layout: home
 hero:
   name: Midway-Vue3-SSR
   text: 基于 Midway、Vue 3 组装的 SSR 框架
-  tagline: 简单、易学易用、方便扩展且结合Midway框架，您一直想要的Vue SSR 框架。
+  tagline: 简单、易学易用、方便扩展、集成Midway框架，您一直想要的Vue SSR 框架。
   image:
     src: /logo.png
     alt: Midway-Vue3-SSR
@@ -18,7 +18,7 @@ hero:
 
 features:
   - title: 易学易用
-    details: 基于 Vue 3、Midway 和 TypeScript 等组装，不需要再学习，开箱即用。
+    details: 基于 Vue 3、Midway 和 TypeScript 等组装；如果你已经熟悉Vue 3、Midway，不需要再学习，开箱即用。
   - title: 方便扩展
     details: 框架只是把 Vue 3 和 Midway 进行组装，并没有独立封装成为底层插件，所有源代码一目了然，更方便二次开发与扩展。
   - title: Node.js 后端框架集成

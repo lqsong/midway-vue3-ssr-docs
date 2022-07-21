@@ -108,3 +108,9 @@ pnpm dev
 └── tsconfig.json              # Midway的ts配置，不包括web目录
 ```
 
+:::tip 
+`src/config/config.local.ts` 本地开发环境重置，修改端口参数等等，已追加到 `.gitignore` 文件中，禁止提交。
+
+`src/config/config.prod.ts`  本地生产环境重置，修改端口参数等等，已追加到 `.gitignore` 文件中，禁止提交。
+:::
+
