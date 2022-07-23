@@ -100,8 +100,7 @@ export class HomeController {
   @Get('/404')
   @ContentType('text/html')
   async home(): Promise<void> {
-    const vServer = await createViteServer(this.app);
-    this.ctx.body = render(this.ctx, vServer);
+    this.ctx.body = render(this.ctx, this.app);
   }
 }
 ```
@@ -255,8 +254,7 @@ export class HomeController {
   @Get('/500')
   @ContentType('text/html')
   async home(): Promise<void> {
-    const vServer = await createViteServer(this.app);
-    this.ctx.body = render(this.ctx, vServer);
+    this.ctx.body = render(this.ctx, this.app);
   }
 }
 ```

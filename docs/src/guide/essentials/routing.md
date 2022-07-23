@@ -223,7 +223,7 @@ export default DefaultLayoutRoutes;
 import { App, Inject, Controller, Get, ContentType } from '@midwayjs/decorator';
 import { Application, Context } from '@midwayjs/koa';
 
-import { createViteServer, render } from '../vite.server';
+import { render } from '../vite.server';
 
 @Controller('/')
 export class HomeController {
@@ -239,8 +239,7 @@ export class HomeController {
   @Get('/localapi')
   @ContentType('text/html')
   async home(): Promise<void> {
-    const vServer = await createViteServer(this.app);
-    this.ctx.body = render(this.ctx, vServer);
+    this.ctx.body = render(this.ctx, this.app);
   }
 }
 
