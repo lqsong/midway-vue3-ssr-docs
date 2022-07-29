@@ -87,6 +87,11 @@ export default defineConfig({
         
       ],
     },
+    algolia: {
+      indexName: 'midway-vue3-ssr',
+      appId: 'JUX5Q8NL56',
+      apiKey: 'ca6d7a7ea1955d40fa7ebbe9266d03c3'
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/lqsong/midway-vue3-ssr' },
     ],
