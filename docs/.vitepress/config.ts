@@ -40,6 +40,10 @@ export default defineConfig({
               {
                 text: 'midway-vue3-ssr',
                 link: 'http://midway-vue3-ssr.liqingsong.cc'
+              },
+              {
+                text: 'midway-react-ssr',
+                link: 'http://midway-react-ssr.liqingsong.cc'
               }
             ],
           },
