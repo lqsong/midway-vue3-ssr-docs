@@ -28,6 +28,8 @@ export interface Seo {
 export interface IAsyncDataContext {
   route: RouteLocationNormalizedLoaded;
   store: Pinia;
+  router: Router;
+  ctx?: Context; // 在服务端运行时存在
 }
 declare module 'vue' {
   interface ComponentCustomOptions {
