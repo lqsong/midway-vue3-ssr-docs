@@ -245,6 +245,32 @@ export class HomeController {
 
 ```
 
+> @Get('/about') 、@Get('/detail') 、 @Get('/localapi') 可以用  @Get('/*')代替，这样后期就不用管这里了，只需要写前端路由就可以了，如下样例：
+
+```ts{15}
+import { App, Inject, Controller, Get, ContentType } from '@midwayjs/decorator';
+import { Application, Context } from '@midwayjs/koa';
+
+import { render } from '../vite.server';
+
+@Controller('/')
+export class HomeController {
+  @App()
+  app: Application;
+
+  @Inject()
+  ctx: Context;
+
+  @Get('/')
+  @Get('/*')
+  @ContentType('text/html')
+  async home(): Promise<void> {
+    this.ctx.body = render(this.ctx, this.app);
+  }
+}
+
+```
+
  `Midway路由` 详细规则请查看 [官方文档](http://www.midwayjs.org/docs/env_config)。
 
 

@@ -83,6 +83,8 @@ export default defineConfig({
           items: [
             { text: 'UI 组件', link: '/guide/senior/ui-components' },
             { text: '异常处理', link: '/guide/senior/exception-handling' },
+            { text: 'gzip 压缩', link: '/guide/senior/gzip' },
+            { text: '分离第三方库', link: '/guide/senior/separate-lib' },
             { text: 'Vite 服务', link: '/guide/senior/vite' },
             { text: 'tsconfig 配置', link: '/guide/senior/tsconfig' },
             { text: 'VS Code 插件', link: '/guide/senior/v-s-code' },

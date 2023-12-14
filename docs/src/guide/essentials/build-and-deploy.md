@@ -75,6 +75,27 @@ pnpm prune --production  # 移除开发依赖
 NODE_ENV=production pm2 start ./bootstrap.js --name midway_vue3_ssr -i 4 # 启动项目
 ```
 
+:::tip 补充：
+
+或者在本地构建好项目，把除了 `node_modules` 目录的其他所有文件与目录全部上传服务器，服务器上直接省略掉构建步骤。例如：
+
+在本地，操作如下：
+
+```sh
+pnpm i                   # 安装开发期依赖
+pnpm run build           # 构建项目
+```
+上传本地除了 `node_modules` 目录的其他所有文件与目录到服务器。
+
+在服务器，上传的项目目录下，操作如下：
+```sh
+pnpm i                   # 安装开发期依赖
+pnpm prune --production  # 移除开发依赖
+NODE_ENV=production pm2 start ./bootstrap.js --name midway_vue3_ssr -i 4 # 启动项目
+```
+
+这样做的原因：减少服务器构建压力。
+:::
 
 
 

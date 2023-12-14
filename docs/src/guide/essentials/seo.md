@@ -4,7 +4,7 @@
 
 ## 说明 {#illustrate}
 
-`seo`方法会在组件每次加载之前被调用。它可以在服务端或路由更新之前，[asyncData 方法](/guide/essentials/async-data.md)之后被调用。在这个方法被调用的时候，第一个参数被设定为 [store](/guide/essentials/store-pinia.md) 与 [route](/guide/essentials/routing.md)的集合`IAsyncDataContext`类型，你可以利用 seo方法来设置或重置当前页面的seo，框架会将 seo 返回的数据与[路由](/guide/essentials/routing.md#vue-route-config-param)中设置的seo融合，最后一并设置到当前页面。
+`seo`方法会在组件每次加载之前被调用。它可以在服务端或路由更新之前，[asyncData 方法](/guide/essentials/async-data.md)之后被调用。在这个方法被调用的时候，第一个参数被设定为  [store](/guide/essentials/store-pinia.md) 、 [route](/guide/essentials/routing.md)、router 和 ctx(服务端存在)的集合`IAsyncDataContext`类型，你可以利用 seo方法来设置或重置当前页面的seo，框架会将 seo 返回的数据与[路由](/guide/essentials/routing.md#vue-route-config-param)中设置的seo融合，最后一并设置到当前页面。
 
 :::tip 注意：
 
@@ -19,6 +19,10 @@ seo方法存在的原因是为了解决特殊需求，如：详情页面的title
 ### 类型 {#illustrate-type}
 
 ```ts
+import { Context } from '@midwayjs/koa';
+import { RouteLocationNormalizedLoaded, Router } from 'vue-router';
+import { Pinia } from 'pinia';
+
 export interface Seo {
   title?: string;
   keywords?: string;

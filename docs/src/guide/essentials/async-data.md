@@ -4,11 +4,15 @@
 
 ## 说明 {#illustrate}
 
-`asyncData`方法会在组件每次加载之前被调用。它可以在服务端或路由更新之前被调用。在这个方法被调用的时候，第一个参数被设定为 [store](/guide/essentials/store-pinia.md) 与 [route](/guide/essentials/routing.md)的集合`IAsyncDataContext`类型，你可以利用 asyncData方法来获取数据。
+`asyncData`方法会在组件每次加载之前被调用。它可以在服务端或路由更新之前被调用。在这个方法被调用的时候，第一个参数被设定为 [store](/guide/essentials/store-pinia.md) 、 [route](/guide/essentials/routing.md)、router 和 ctx(服务端存在)的集合`IAsyncDataContext`类型，你可以利用 asyncData方法来获取数据。
 
 ### 类型 {#illustrate-type}
 
 ```ts
+import { Context } from '@midwayjs/koa';
+import { RouteLocationNormalizedLoaded, Router } from 'vue-router';
+import { Pinia } from 'pinia';
+
 export interface IAsyncDataContext {
   route: RouteLocationNormalizedLoaded;
   store: Pinia;
